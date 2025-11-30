@@ -16,8 +16,9 @@ To link this repository to your local development environment:
 
 ### Windows
 
-```bash
-# Navigate to your LexaVox directory
+```shell
+# Create and navigate to your LexaVox directory
+mkdir C:\LexaVox
 cd C:\LexaVox
 
 # Clone the repository
@@ -28,8 +29,9 @@ git clone https://github.com/lexavox/lexavox-policies.git
 
 ### macOS / Linux
 
-```bash
-# Navigate to your preferred directory
+```shell
+# Create and navigate to your LexaVox directory
+mkdir -p ~/LexaVox
 cd ~/LexaVox
 
 # Clone the repository
@@ -40,7 +42,7 @@ git clone https://github.com/lexavox/lexavox-policies.git
 
 To pull the latest policy updates:
 
-```bash
+```shell
 cd C:\LexaVox\lexavox-policies  # Windows
 # or
 cd ~/LexaVox/lexavox-policies   # macOS/Linux
@@ -54,7 +56,7 @@ If you need to update policies:
 
 1. Make your changes locally
 2. Commit and push:
-   ```bash
+   ```shell
    git add .
    git commit -m "Update policy documents"
    git push origin main
