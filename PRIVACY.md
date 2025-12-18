@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** [Insert Date]
+**Effective Date:** December 1, 2025
 **Controller:** LexaVox
 
 ## Data We Collect
@@ -33,7 +33,7 @@
 ## Your Rights (GDPR/CCPA)
 *   Access, correct, delete your data.
 *   Opt-out of sale (we do not sell data).
-*   Exercise rights via [Insert Contact Email].
+*   Exercise rights via privacy@lexavox.com.
 *   Verification may be required.
 
 ## Children’s Privacy
@@ -44,7 +44,7 @@
 Data may be processed in multiple regions by third-party processors; protections via contractual safeguards.
 
 ## Contact
-[Insert Contact Email] for privacy requests.
+privacy@lexavox.com for privacy requests.
 
 ## Changes
 Updates will be posted; continued use constitutes acceptance.

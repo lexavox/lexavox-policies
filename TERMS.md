@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** [Insert Date]
+**Effective Date:** December 1, 2025
 **Provider:** LexaVox (“we,” “us,” “our”)
 **Scope:** Governs use of the LexaVox mobile app and related services.
 
@@ -50,4 +50,4 @@ We may suspend or terminate access for violations of these Terms. You may stop u
 We may update these Terms; continued use constitutes acceptance.
 
 ## Contact
-[Insert Contact Email] for questions or notices.
+privacy@lexavox.com for questions or notices.
