@@ -1,5 +1,7 @@
 # Security Policy
 
+**Last Updated:** January 15, 2026
+
 ## Data Security
 *   **Encryption:** We use TLS/HTTPS for all data in transit between the app and cloud services.
 *   **Storage:** User content is stored locally on your device using the operating system's sandboxed storage. We do not host user data on public servers.
@@ -10,7 +12,7 @@
 *   **Backups:** You are responsible for backing up your device data.
 
 ## Vulnerability Reporting
-If you discover a security vulnerability in LexaVox, please report it to [Insert Security Email]. We appreciate your help in keeping our users safe.
+If you discover a security vulnerability in LexaVox, please report it to security@lexavox.com. We appreciate your help in keeping our users safe.
 
 ## Privacy by Design
 *   **Minimal Data:** We only collect diagnostics necessary for app stability.

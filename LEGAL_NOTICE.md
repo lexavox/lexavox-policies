@@ -1,10 +1,12 @@
 # Legal Notice
 
+**Last Updated:** January 15, 2026
+
 ## Copyright & IP Ownership
 *   **LexaVox:** We own the app, its code, design, and trademarks.
 *   **User Content:** You retain full ownership of the content you scan, upload, or create using the app. We claim no license or ownership rights over your User Content.
 
-## Content Liability & “No Piracy” Disclaimer
+## Content Liability & "No Piracy" Disclaimer
 *   **User Responsibility:** You are solely responsible for ensuring you have the necessary rights to scan, upload, and process any content.
 *   **No Assistance:** LexaVox does not assist, enable, or participate in bypassing copyright restrictions or DRM.
 *   **Liability:** LexaVox is not liable for any infringing content submitted by users.
@@ -18,8 +20,8 @@
 
 ## Third-Party Services
 LexaVox utilizes the following third-party services:
-*   **Google / Gemini API:** For OCR, translation, summarization, and TTS.
-*   **Expo / React Native:** App framework and build tools.
+*   **Google Cloud Platform:** For OCR, translation, summarization, TTS, and Gemini API.
+*   **React Native:** App framework and build tools.
 *   **Platform Services:** iOS and Android system services (Camera, Microphone, Filesystem).
 
 These services are governed by their respective terms and privacy policies.

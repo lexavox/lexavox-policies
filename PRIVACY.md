@@ -1,10 +1,11 @@
 # Privacy Policy
 
-**Effective Date:** December 1, 2025
+**Effective Date:** January 15, 2026
 **Controller:** LexaVox
 
 ## Data We Collect
 *   **User Content:** Images, audio, text you provide for OCR, translation, summarization, TTS.
+*   **Age Range:** Age range (not exact birthdate) collected during first-run age verification for COPPA compliance and age-appropriate features.
 *   **Device Data:** Basic diagnostics, crash logs, OS version.
 *   **Usage Data:** Feature usage (non-identifying), queued jobs status.
 *   **No Sensitive Categories** unless you voluntarily include them in User Content.
@@ -16,10 +17,17 @@
 *   Compliance with legal obligations.
 
 ## Sharing
-*   With cloud providers to perform user-initiated processing (e.g., Gemini API, Google services, Expo infrastructure).
+*   With cloud providers to perform user-initiated processing (e.g., Google Cloud services for OCR, Translation, STT, TTS, Gemini API).
 *   With analytics/diagnostics services as necessary for app stability (non-identifying where possible).
 *   **We do not sell User Content.**
 *   **We do not use User Content to train models.**
+
+## Advertising
+*   App open ads and interstitial ads are shown to free tier users
+*   Ad providers (Google AdMob) may collect device and usage data per their privacy policies
+*   Premium subscribers and Offline Pack owners do not see app open or interstitial ads (except optional rewarded videos)
+*   Users can opt-out of personalized ads via device settings
+*   Internal promotional banners (not ads) promote our own products and do not share data with third parties
 
 ## Retention
 *   On-device history and stored files remain until you delete them or uninstall the app.
@@ -36,9 +44,15 @@
 *   Exercise rights via privacy@lexavox.com.
 *   Verification may be required.
 
-## Children’s Privacy
-*   Not directed to children under 13 (or equivalent age).
-*   We do not knowingly collect personal data from children.
+## Children's Privacy (COPPA Compliance)
+*   **Age Requirement:** LexaVox is for users 13 years of age or older.
+*   **Age Verification:** Users select their age range during first use. Users under 13 are blocked from accessing the app.
+*   **Age-Based Features:**
+    * Users under 18 have profanity filter permanently enabled for text-to-speech
+    * Users under 18 receive child-directed advertising (non-personalized, age-appropriate)
+    * Users 18+ can optionally disable the profanity filter in settings
+*   **Data Minimization:** We collect age range only (e.g., "13-17"), not exact birthdates, to minimize personal data collection.
+*   **No Knowingly Collecting from Under 13:** We do not knowingly collect personal data from children under 13. If we discover such data, we will delete it promptly.
 
 ## International Transfers
 Data may be processed in multiple regions by third-party processors; protections via contractual safeguards.

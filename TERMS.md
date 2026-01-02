@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** December 1, 2025
+**Effective Date:** January 15, 2026
 **Provider:** LexaVox (“we,” “us,” “our”)
 **Scope:** Governs use of the LexaVox mobile app and related services.
 

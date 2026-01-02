@@ -1,6 +1,6 @@
 # LexaVox Monetization & Token Policy
 
-_Last updated: 2025-12-24_
+_Last updated: 2026-01-15_
 
 This document describes how LexaVox rewards, tokens, transcription minutes, and paid packs operate. It supplements the Terms and Privacy disclosures by providing a transparent overview of how cloud features are funded and consumed. Future changes will be versioned in this repository; refer to the app for the currently active policy date.
 
@@ -13,9 +13,9 @@ This document describes how LexaVox rewards, tokens, transcription minutes, and 
 ## 2. Monthly Allowances
 | User Type | Monthly Tokens | Ads | Notes |
 | --- | --- | --- | --- |
-| Free | 0 | Banners/interstitials + optional rewarded ads | Must watch ads or buy packs to access cloud features. |
-| Premium Monthly ($7.99) | 300 | Ad-free unless user opts into rewarded videos | Same allowance for annual plan to keep UX simple. |
-| Premium Annual ($59.99/yr) | 300 | Ad-free unless user opts into rewarded videos | Effective $4.99/mo; still profitable at full usage. |
+| Free | 0 | App open ads, interstitials + optional rewarded ads | Must watch ads or buy packs to access cloud features. |
+| Premium Monthly ($7.99) | 300 | Ad-free (no app open or interstitials) unless user opts into rewarded videos | Same allowance for annual plan to keep UX simple. |
+| Premium Annual ($59.99/yr) | 300 | Ad-free (no app open or interstitials) unless user opts into rewarded videos | Effective $4.99/mo; still profitable at full usage. |
 
 ## 3. Token Burn Rates (per action)
 | Action | Token Cost | Notes |
@@ -33,7 +33,7 @@ This document describes how LexaVox rewards, tokens, transcription minutes, and 
 - Tokens from ads follow the same monthly reset rule.
 
 ### When No Ad Is Available
-- The app informs the user (“No ad available right now. Please try again later or purchase a pack.”).
+- The app informs the user ("No ad available right now. Please try again later or purchase a pack.").
 - No courtesy tokens are granted; users may continue offline or buy the Offline Pack for $9.99 to remove offline ads entirely.
 
 ## 4. Token Packs (non-STT)
@@ -63,10 +63,48 @@ This document describes how LexaVox rewards, tokens, transcription minutes, and 
 - The first 30 minutes of cloud STT are complimentary for new accounts (one-time). Once exhausted, users must purchase a pack.
 - Minutes are consumed in whole-minute increments; the app shows remaining balance prominently. When a pack reaches zero minutes, transcription stops and the user is prompted to purchase more.
 
-## 6. Ads & House Promotions
-- **Rewarded ads:** AdMob mediation only; never manually chained SDKs. Tokens are awarded exclusively via AdMob’s `onUserEarnedReward` callback.
-- **Interstitials/banners:** Limited to free users, shown no more than once per 30 minutes of active use, and never mid-task. Offline Pack removes these placements.
-- **House ads:** Delivered via AdMob House Ads; may promote premium, token packs, or Offline Pack but do not grant rewards.
+## 6. Ads & Promotions
+
+### Ad Types and Placement
+
+#### App Open Ads
+- **Who sees them:** Free tier users only
+- **When:** Displayed when app launches or resumes from background after being minimized
+- **Frequency:** Natural app usage pattern; follows Google AdMob guidelines
+- **Exemptions:** Premium subscribers and Offline Pack ($9.99) owners never see app open ads
+- **User Control:** Users can upgrade to premium or purchase Offline Pack to remove
+
+#### Interstitial Ads
+- **Who sees them:** Free tier users only
+- **When:** Shown between tasks, never mid-workflow
+- **Frequency:** No more than once per 30 minutes of active use
+- **Exemptions:** Premium subscribers and Offline Pack owners never see interstitials
+- **Placement Guidelines:** Never interrupt OCR scanning, transcription, or TTS playback
+
+#### Rewarded Ads
+- **Who sees them:** All users (free and premium) - opt-in only
+- **Reward:** 2 tokens per completed rewarded video
+- **Frequency Caps:**
+  - Maximum 2 rewarded ads per hour
+  - Maximum 10 rewarded ads per day
+  - Caps reset daily at midnight UTC
+- **User Control:** 100% user-initiated; never shown automatically
+- **Token Rules:** Rewarded tokens follow same monthly reset as other tokens
+
+#### Internal Promotional Banners
+- **Delivery:** In-app promotional banners (not ads)
+- **Purpose:** Promote premium subscriptions, Offline Pack, feature tips
+- **Placement:** Tips section at top of main screens
+- **Who sees them:** All users (content varies by user tier)
+- **No Rewards:** Internal promotions do not grant tokens
+- **AdMob Compliant:** Internal product promotion is encouraged by Google
+
+### Ad Implementation & Compliance
+- **Mediation:** AdMob mediation only; never manually chained SDKs
+- **Reward Verification:** Tokens awarded exclusively via AdMob's `onUserEarnedReward` callback
+- **Privacy:** Ad personalization respects user consent (GDPR/CCPA)
+- **Platform Compliance:** Follows Google AdMob policies and Play Store requirements
+- **Measurement:** Firebase Analytics tracks ad performance (non-identifying data)
 
 ## 7. Backend Safeguards & Enforcement
 - Every cloud action goes through the backend, which verifies Firebase Auth, checks token or minute balance, and debits atomically before calling external APIs.
