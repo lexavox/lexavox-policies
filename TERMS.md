@@ -19,6 +19,12 @@ We grant you a limited, non-exclusive, revocable license to use LexaVox for pers
 *   No uploading or processing of infringing, unlawful, hateful, or malicious content.
 *   No attempts to bypass copyright restrictions, DRM, or other protections.
 *   No reverse engineering, scraping, or abuse of services or APIs.
+*   No abuse of the referral program, including but not limited to:
+    * Creating fake accounts to claim referral rewards
+    * Using automated tools or bots to generate referral claims
+    * Circumventing referral limits through technical manipulation
+    * Self-referral or circular referral schemes
+    * Any other fraudulent or deceptive referral practices
 
 ## User Content Ownership
 *   You retain all rights to your User Content.
@@ -43,8 +49,15 @@ We grant you a limited, non-exclusive, revocable license to use LexaVox for pers
 ## Limitation of Liability
 To the maximum extent permitted by law, we are not liable for indirect, incidental, consequential, or punitive damages arising from your use of the app. Our total liability is limited to the amount you paid for the app (if any) in the 12 months preceding the claim.
 
+## Referral Program
+*   Users may participate in our referral program to earn promotional Premium trial access.
+*   Referral rewards are granted at our sole discretion and subject to verification.
+*   We reserve the right to revoke referral rewards or suspend accounts found engaging in fraudulent referral activity.
+*   Referral program terms are detailed in our Monetization Policy and may be modified or terminated at any time.
+*   Promotional trial access does not constitute a paid subscription and expires after the trial period.
+
 ## Termination
-We may suspend or terminate access for violations of these Terms. You may stop using the app at any time.
+We may suspend or terminate access for violations of these Terms, including referral program abuse. You may stop using the app at any time.
 
 ## Changes
 We may update these Terms; continued use constitutes acceptance.

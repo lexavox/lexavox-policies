@@ -8,12 +8,18 @@
 *   **Age Range:** Age range (not exact birthdate) collected during first-run age verification for COPPA compliance and age-appropriate features.
 *   **Device Data:** Basic diagnostics, crash logs, OS version.
 *   **Usage Data:** Feature usage (non-identifying), queued jobs status.
+*   **Referral Program Data:** If you participate in our referral program:
+    * Your unique referral code (8-character alphanumeric)
+    * Referral claims (when someone uses your code) - timestamp only, no personal data of referee
+    * IP address and user agent (for fraud prevention only, not linked to personal identity)
+    * Trial grant status (server-side tracking of promotional trial periods)
 *   **No Sensitive Categories** unless you voluntarily include them in User Content.
 
 ## How We Use Data
 *   Provide OCR, translation, summarization, TTS.
 *   Maintain on-device history and durable storage.
 *   Improve stability and support (diagnostics).
+*   Manage referral program rewards and prevent abuse.
 *   Compliance with legal obligations.
 
 ## Sharing
@@ -33,6 +39,7 @@
 *   On-device history and stored files remain until you delete them or uninstall the app.
 *   Temporary cloud processing is transient.
 *   Diagnostics retained per provider policies; minimized where feasible.
+*   Referral program data (codes, claims, trial grants) retained in Firestore for the duration of your account to enforce abuse prevention rules. Deleted when you delete your account.
 
 ## Security
 *   Data in transit is encrypted (HTTPS).

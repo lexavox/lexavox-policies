@@ -106,11 +106,59 @@ This document describes how LexaVox rewards, tokens, transcription minutes, and 
 - **Platform Compliance:** Follows Google AdMob policies and Play Store requirements
 - **Measurement:** Firebase Analytics tracks ad performance (non-identifying data)
 
-## 7. Backend Safeguards & Enforcement
+## 7. Referral Program
+
+### Overview
+LexaVox offers a referral program that rewards users for inviting new users to the app with a 7-day Premium trial.
+
+### How It Works
+1. **Share Your Code:** Authenticated users receive a unique 8-character referral code (e.g., `AB3K7XYZ`)
+2. **Invite Friends:** Share your referral link (`https://lexavox.app/invite?ref=AB3K7XYZ`) via any channel
+3. **New User Installs:** When someone installs LexaVox via your link and creates an account
+4. **Claim Reward:** The new user claims the referral, granting you 7 days of Premium access
+5. **Server-Authoritative:** All trial grants are managed by our backend via Firestore to prevent tampering
+
+### Rewards
+- **7 days of Premium access** per successful referral
+- Premium access includes:
+  - 300 monthly tokens for cloud features
+  - No app open ads or interstitial ads
+  - Full access to all Premium features
+
+### Abuse Prevention & Limitations
+To ensure fairness and prevent abuse, the following limits apply:
+
+**Referrer Limits:**
+- Maximum **3 successful referrals** per 30-day rolling window
+- Maximum **30 days of bonus trial time** can accumulate at once
+- Bonus time is additive (3 referrals = 21 days total)
+
+**Referee Limits:**
+- Each user can claim **only one referral** (lifetime)
+- Self-referral is blocked (cannot claim your own code)
+- Deep link must be from a new installation (existing users cannot claim)
+
+**Technical Safeguards:**
+- Firestore atomic transactions prevent duplicate claims
+- IP address and user agent logged for fraud analysis (not linked to personal identity)
+- Server validates all claims; client requests can be rejected
+
+### Trial vs Paid Subscription
+- Referral trials grant temporary Premium access but do not constitute a paid subscription
+- Trials expire after the grant period ends
+- Users can upgrade to a paid subscription at any time to maintain Premium access
+- Paid subscriptions and referral trials can coexist (e.g., if you have 10 days of trial remaining and purchase Premium, you keep Premium after the trial ends)
+
+### Implementation Status
+- **Current:** Deep links work for existing users who install via referral link
+- **Coming Soon:** Firebase Dynamic Links for deferred deep linking (install attribution for new users who don't have the app yet)
+
+## 8. Backend Safeguards & Enforcement
 - Every cloud action goes through the backend, which verifies Firebase Auth, checks token or minute balance, and debits atomically before calling external APIs.
 - Remote Config provides kill switches for each feature, as well as adjustable token costs, ad reward amounts, and per-user caps.
 - OpenTelemetry logging + Cloud Armor rate limits monitor abuse and allow rapid response to anomalies.
+- Referral system uses Firestore transactions for atomic claim processing and abuse prevention.
 
-## 8. Future Changes
-- Any adjustments to token burn, ad exchange, or STT pack pricing will be documented here and reflected in-app.
+## 9. Future Changes
+- Any adjustments to token burn, ad exchange, STT pack pricing, or referral rewards will be documented here and reflected in-app.
 - The Terms will reference this document so users can review the latest monetization policy easily.
