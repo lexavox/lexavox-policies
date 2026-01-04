@@ -1,0 +1,1 @@
+Renaming LEGAL_NOTICE_UPDATED.md to LEGAL_NOTICE.md
