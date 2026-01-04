@@ -1,2 +1,0 @@
-# lexavox-policies
-lexavox-policies
