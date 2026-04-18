@@ -72,7 +72,7 @@ Uninstalling LexaVox immediately removes all locally stored data from your devic
 #### Option 2: Request Cloud Data Deletion (GDPR/CCPA)
 If you used cloud features (cloud OCR, translation, TTS, or AI), contact us to delete your Firebase profile and associated cloud processing records:
 
-**Email:** privacy@lexavox.com  
+**Email:** [privacy@lexavox.com](mailto:privacy@lexavox.com?subject=Request%20Account%20Deletion)  
 **Subject:** "Request Account Deletion"
 
 Please include:
@@ -108,7 +108,7 @@ We will:
 *   **California (CCPA):** You have the right to know, delete, and opt-out of sale of personal information
 *   **Other Jurisdictions:** We honor similar data privacy rights in your region
 
-For any questions about account deletion or data privacy, contact **privacy@lexavox.com**.
+For any questions about account deletion or data privacy, contact **[privacy@lexavox.com](mailto:privacy@lexavox.com)**.
 
 ## Children's Privacy (COPPA Compliance)
 *   **Age Requirement:** LexaVox is for users 13 years of age or older.
@@ -124,7 +124,7 @@ For any questions about account deletion or data privacy, contact **privacy@lexa
 Data may be processed in multiple regions by third-party processors; protections via contractual safeguards.
 
 ## Contact
-privacy@lexavox.com for privacy requests.
+[privacy@lexavox.com](mailto:privacy@lexavox.com) for privacy requests.
 
 ## Changes
 Updates will be posted; continued use constitutes acceptance.
